@@ -602,6 +602,7 @@ resourcesClone() {
   if [ "$resources_clone" = true ]; then
     printInfoSection "Clone Keptn-in-a-Box Resources in $KEPTN_IN_A_BOX_DIR"
     bashas "git clone --branch $KIAB_RELEASE $KEPTN_IN_A_BOX_REPO $KEPTN_IN_A_BOX_DIR --single-branch"
+    bashas "mv -f /home/ubuntu/index.html /home/ubuntu/keptn-in-a-box/resources/homepage/html/pipeline/index.html"
   fi
 }
 
